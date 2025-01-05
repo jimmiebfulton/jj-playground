@@ -1,10 +1,12 @@
+mod messages;
+
 fn main() {
-    print_mgs();
+    print_message(&messages::create_message());
     print_departure_message();
 }
 
-fn print_mgs() {
-    println!("Hello, World!");
+fn print_message(message: &str) {
+    println!("{message}");
 }
 
 fn print_departure_message() {
