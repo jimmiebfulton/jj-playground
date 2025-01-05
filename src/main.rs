@@ -1,10 +1,12 @@
+mod cli;
+
 fn main() {
-    print_msg();
+    print_message(&cli::create_greeting());
     print_departure_message();
 }
 
-fn print_msg() {
-    println!("Hello, World!");
+fn print_message(message: &str) {
+    println!("{message}");
 }
 
 fn print_departure_message() {
